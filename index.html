@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scientific Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- to perform BODMAS Operations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script>     
+
+    <section id="header">
+
+      <!-- logo -->
+      <div class="image">
+        <a href="#"><img src="logo.png" alt="" /></a>
+        <h3>Calculator.net</h3>
+      </div>
+
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Switch Theme</em>
+    </div>
+
+    </section>
+
+    <div class="heading">
+      <h2>Scientific Calculator</h2>
+    </div>
+
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" readonly />
+      </div>
+      <div class="buttons">
+        <button onclick="calculateExponentiation()">x^2</button>
+        <button onclick="calculateSin()">sin</button>
+        <button onclick="calculateCos()">cos</button>
+        <button onclick="calculateTan()">tan</button>
+        <button onclick="calculateSquareRoot()">√</button>
+        <button onclick="calculateLog()">log</button>
+        <button onclick="calculateFactorial()">!</button>
+        <button onclick="calculatePower()">x^y</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteDigit()">&larr;</button>
+        <button onclick="appendInput('9')">9</button>
+        <button onclick="appendInput('8')">8</button>
+        <button onclick="appendInput('7')">7</button>
+        <button onclick="appendInput('/')">/</button>
+        <button onclick="appendInput('*')">*</button>
+        <button onclick="appendInput('6')">6</button>
+        <button onclick="appendInput('5')">5</button>
+        <button onclick="appendInput('4')">4</button>
+        <button onclick="appendInput('+')">+</button>
+        <button onclick="appendInput('-')">-</button>
+        <button onclick="appendInput('3')">3</button>
+        <button onclick="appendInput('2')">2</button>
+        <button onclick="appendInput('1')">1</button>
+        <button onclick="appendInput('0')">0</button>
+        <button onclick="appendInput('.')">.</button>
+        <!-- <button onclick="calculateFactorial()">!</button> -->
+        <button onclick="appendInput('(')">(</button>
+        <button onclick="appendInput(')')">)</button>
+        <button onclick="calculatePercentage()">%</button>
+        <button onclick="calculateResult()" class="equal-button">=</button>
+      </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
